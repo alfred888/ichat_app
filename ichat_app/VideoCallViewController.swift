@@ -432,7 +432,7 @@ extension VideoCallViewController: VideoStreamManagerDelegate {
         // 这里应该解码并播放音频
     }
     
-    func didReceiveError(_ error: Error) {
+    func didReceiveVideoError(_ error: Error) {
         DispatchQueue.main.async {
             self.showAlert(title: "视频流错误", message: error.localizedDescription)
         }
